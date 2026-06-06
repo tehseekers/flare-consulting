@@ -1,0 +1,172 @@
+import { useEffect, useRef, useState } from 'react';
+import { HERO_STATS, HERO_FLOAT_CARDS } from '../data/content';
+
+function useCountUp(target: number, duration: number, started: boolean, decimals: number) {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    if (!started) return;
+    let startTime: number | null = null;
+    const step = (now: number) => {
+      if (!startTime) startTime = now;
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setValue(parseFloat((target * eased).toFixed(decimals)));
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, [started, target, duration, decimals]);
+  return value;
+}
+
+function StatItem({ stat }: { stat: (typeof HERO_STATS)[0] }) {
+  const val = useCountUp(stat.value, 2200, true, 0);
+  return (
+    <div className="text-center sm:text-left">
+      <div className="text-4xl font-extrabold text-white mb-1 tabular-nums">
+        {val}{stat.suffix}
+      </div>
+      <div className="text-sm text-slate-400 tracking-wide">{stat.label}</div>
+    </div>
+  );
+}
+
+export default function Hero() {
+  const handleScroll = (href: string) => {
+    const el = document.querySelector(href);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const floatClasses = ['animate-float-1', 'animate-float-2', 'animate-float-3'];
+  const badgeColors: Record<string, string> = {
+    Live: 'bg-emerald-500/20 text-emerald-400',
+    Completed: 'bg-blue-500/20 text-blue-300',
+    Active: 'bg-sky-500/20 text-sky-300',
+  };
+
+  return (
+    <section
+      id="home"
+      className="relative min-h-screen flex flex-col justify-center overflow-hidden"
+      style={{ background: 'linear-gradient(135deg, #020817 0%, #0b1120 55%, #0d1a3a 100%)' }}
+    >
+      {/* Grid overlay */}
+      <div
+        className="absolute inset-0 opacity-[0.06]"
+        style={{
+          backgroundImage: `linear-gradient(rgba(59,130,246,0.8) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(59,130,246,0.8) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px',
+        }}
+      />
+
+      {/* Top-right blue glow */}
+      <div
+        className="absolute top-0 right-0 w-[800px] h-[800px] pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle at 70% 30%, rgba(59,130,246,0.12) 0%, transparent 60%)',
+        }}
+      />
+      {/* Bottom-left glow */}
+      <div
+        className="absolute bottom-0 left-0 w-[600px] h-[600px] pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle at 30% 70%, rgba(14,165,233,0.08) 0%, transparent 60%)',
+        }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left: headline content */}
+          <div>
+            {/* Presence badges */}
+            <div className="flex flex-wrap gap-2.5 mb-8">
+              <span className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-medium px-4 py-1.5 rounded-full">
+                <span>🇸🇬</span> Singapore HQ
+              </span>
+              <span className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-medium px-4 py-1.5 rounded-full">
+                <span>🇮🇳</span> India Operations
+              </span>
+            </div>
+
+            <p className="text-blue-400 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
+              Enterprise Technology Consulting
+            </p>
+
+            <h1 className="text-5xl sm:text-6xl lg:text-[64px] font-extrabold text-white leading-[1.05] tracking-tight mb-7">
+              Igniting{' '}
+              <span className="text-gradient-blue">Digital</span>
+              <br />
+              <span className="text-gradient-blue">Transformation</span>
+              <br />
+              Across Asia
+            </h1>
+
+            <p className="text-lg text-slate-300 max-w-xl mb-10 leading-relaxed">
+              From{' '}
+              <span className="text-white font-medium">AI & ML</span> to{' '}
+              <span className="text-white font-medium">Cloud Migrations</span>,{' '}
+              <span className="text-white font-medium">ERP Implementations</span>, and{' '}
+              <span className="text-white font-medium">Large-Scale IT Delivery</span> — we combine
+              strategic insight with hands-on execution for enterprises across Singapore and India.
+            </p>
+
+            <div className="flex flex-wrap gap-4 mb-20">
+              <button
+                onClick={() => handleScroll('#services')}
+                className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 hover:scale-[1.02] text-sm"
+              >
+                Explore Our Services
+              </button>
+              <button
+                onClick={() => handleScroll('#contact')}
+                className="font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-sm"
+                style={{ border: '1px solid rgba(15,118,110,0.5)', color: '#5eead4', background: 'rgba(15,118,110,0.08)' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(15,118,110,0.18)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(15,118,110,0.8)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(15,118,110,0.08)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(15,118,110,0.5)'; }}
+              >
+                Start a Project
+              </button>
+            </div>
+
+            {/* Stats row */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 border-t border-white/8 pt-10">
+              {HERO_STATS.map((stat) => (
+                <StatItem key={stat.label} stat={stat} />
+              ))}
+            </div>
+          </div>
+
+          {/* Right: floating project cards */}
+          <div className="hidden lg:flex flex-col items-end gap-5 pr-4">
+            {HERO_FLOAT_CARDS.map((card, i) => {
+              const Icon = card.icon;
+              return (
+                <div
+                  key={card.title}
+                  className={`${floatClasses[i]} glass-card rounded-2xl px-5 py-4 w-72`}
+                  style={{ boxShadow: `0 4px 30px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.06)` }}
+                >
+                  <div className="flex items-start justify-between mb-3">
+                    <div
+                      className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+                      style={{ background: `${card.color}20`, border: `1px solid ${card.color}30` }}
+                    >
+                      <Icon className="w-4 h-4" style={{ color: card.color }} />
+                    </div>
+                    <span className={`text-[10px] font-semibold px-2.5 py-1 rounded-full ${badgeColors[card.badge]}`}>
+                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-current mr-1.5 animate-pulse-dot" />
+                      {card.badge}
+                    </span>
+                  </div>
+                  <p className="text-white text-sm font-semibold mb-1">{card.title}</p>
+                  <p className="text-slate-400 text-xs leading-relaxed">{card.detail}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
