@@ -32,7 +32,7 @@ export default function Navbar() {
           <button onClick={() => handleNav('#home')} className="flex items-center gap-3 group">
             <div className="rounded-xl overflow-hidden bg-white p-1 shadow-md flex-shrink-0">
               <img
-                src="/image.png"
+                src={`${import.meta.env.BASE_URL}image.png`}
                 alt="Flare Consultancy"
                 className="h-9 w-auto object-contain block"
                 style={{ maxWidth: '52px' }}
