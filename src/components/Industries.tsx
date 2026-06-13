@@ -2,37 +2,48 @@ import { INDUSTRIES } from '../data/content';
 
 export default function Industries() {
   return (
-    <section className="py-28 bg-white">
+    <section id="industries" className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-16">
           <p className="text-blue-600 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
-            Sectors
+            Specialisation
           </p>
           <div className="w-12 h-[3px] bg-blue-600 rounded-full mx-auto mb-7" />
           <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-5 tracking-tight">
             Industries We Serve
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed">
-            Our consultants bring sector-specific domain knowledge that goes beyond generic
-            technology advice — we understand your industry's challenges, regulations, and
-            competitive dynamics.
+            Our consultants bring deep domain knowledge across the sectors that are shaping
+            Asia's digital economy — delivering talent that understands your industry, not
+            just your job description.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {INDUSTRIES.map((industry) => {
             const Icon = industry.icon;
             return (
               <div
                 key={industry.label}
-                className="flex flex-col items-center text-center p-7 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 hover:shadow-lg hover:shadow-blue-500/5 hover:-translate-y-1 transition-all duration-300 group"
+                className="flex flex-col p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1 transition-all duration-300 group"
               >
-                <div className="w-12 h-12 rounded-xl bg-white border border-slate-200 group-hover:bg-blue-600 group-hover:border-blue-600 flex items-center justify-center mb-4 shadow-sm transition-all duration-300">
-                  <Icon className="w-5 h-5 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 group-hover:scale-110"
+                  style={{
+                    background: `${industry.color}12`,
+                    border: `1px solid ${industry.color}25`,
+                  }}
+                >
+                  <Icon className="w-5 h-5" style={{ color: industry.color }} />
                 </div>
-                <span className="text-sm font-semibold text-slate-700 group-hover:text-blue-700 transition-colors duration-300">
+                <h3 className="font-bold text-slate-900 mb-3 text-base tracking-tight">
                   {industry.label}
-                </span>
+                </h3>
+                <div
+                  className="w-8 h-[2px] rounded-full mb-4 transition-all duration-300 group-hover:w-12"
+                  style={{ background: industry.color }}
+                />
+                <p className="text-slate-500 text-sm leading-relaxed">{industry.description}</p>
               </div>
             );
           })}

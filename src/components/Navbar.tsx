@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Zap, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NAV_LINKS } from '../data/content';
 
 export default function Navbar() {
@@ -27,19 +27,24 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-3">
           {/* Logo */}
-          <button onClick={() => handleNav('#home')} className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center shadow-md shadow-blue-600/30 group-hover:bg-blue-500 transition-colors">
-              <Zap className="w-5 h-5 text-white" strokeWidth={2.5} />
+          <button onClick={() => handleNav('#home')} className="flex items-center gap-3 group">
+            <div className="rounded-xl overflow-hidden bg-white p-1 shadow-md flex-shrink-0">
+              <img
+                src="/image.png"
+                alt="Flare Consultancy"
+                className="h-9 w-auto object-contain block"
+                style={{ maxWidth: '52px' }}
+              />
             </div>
             <div>
-              <span className={`font-bold text-[17px] tracking-tight transition-colors duration-300 ${scrolled ? 'text-slate-900' : 'text-white'}`}>
+              <span className={`font-bold text-[15px] tracking-tight transition-colors duration-300 ${scrolled ? 'text-slate-900' : 'text-white'}`}>
                 Flare{' '}
-                <span className={scrolled ? 'text-blue-600' : 'text-blue-400'}>Consulting</span>
+                <span className={scrolled ? 'text-blue-600' : 'text-blue-400'}>Consultancy</span>
               </span>
               <div className={`text-[9px] tracking-[0.22em] uppercase font-semibold transition-colors duration-300 ${scrolled ? 'text-slate-400' : 'text-blue-300/70'}`}>
-                Enterprise Advisory
+                Staffing Solutions
               </div>
             </div>
           </button>
@@ -67,7 +72,7 @@ export default function Navbar() {
               onClick={() => handleNav('#contact')}
               className="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 shadow-md shadow-blue-600/20 hover:shadow-blue-500/30 hover:scale-[1.02]"
             >
-              Get In Touch
+              Find Talent
             </button>
           </div>
 
@@ -97,7 +102,7 @@ export default function Navbar() {
             onClick={() => handleNav('#contact')}
             className="mt-4 w-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold py-3 rounded-lg transition-colors"
           >
-            Get In Touch
+            Find Talent
           </button>
         </div>
       )}

@@ -39,9 +39,9 @@ export default function Hero() {
 
   const floatClasses = ['animate-float-1', 'animate-float-2', 'animate-float-3'];
   const badgeColors: Record<string, string> = {
-    Live: 'bg-emerald-500/20 text-emerald-400',
-    Completed: 'bg-blue-500/20 text-blue-300',
-    Active: 'bg-sky-500/20 text-sky-300',
+    Placed: 'bg-blue-500/20 text-blue-300',
+    Onboarded: 'bg-teal-500/20 text-teal-300',
+    Active: 'bg-amber-500/20 text-amber-300',
   };
 
   return (
@@ -71,7 +71,7 @@ export default function Hero() {
       <div
         className="absolute bottom-0 left-0 w-[600px] h-[600px] pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at 30% 70%, rgba(14,165,233,0.08) 0%, transparent 60%)',
+          background: 'radial-gradient(circle at 30% 70%, rgba(15,118,110,0.08) 0%, transparent 60%)',
         }}
       />
 
@@ -90,25 +90,24 @@ export default function Hero() {
             </div>
 
             <p className="text-blue-400 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
-              Enterprise Technology Consulting
+              Staffing Solutions · Asia-Pacific
             </p>
 
             <h1 className="text-5xl sm:text-6xl lg:text-[64px] font-extrabold text-white leading-[1.05] tracking-tight mb-7">
-              Igniting{' '}
-              <span className="text-gradient-blue">Digital</span>
+              Connecting
               <br />
-              <span className="text-gradient-blue">Transformation</span>
+              <span className="text-gradient-blue">Asia's Best</span>
               <br />
-              Across Asia
+              <span className="text-gradient-blue">Talent</span>{' '}with You
             </h1>
 
             <p className="text-lg text-slate-300 max-w-xl mb-10 leading-relaxed">
               From{' '}
-              <span className="text-white font-medium">AI & ML</span> to{' '}
-              <span className="text-white font-medium">Cloud Migrations</span>,{' '}
-              <span className="text-white font-medium">ERP Implementations</span>, and{' '}
-              <span className="text-white font-medium">Large-Scale IT Delivery</span> — we combine
-              strategic insight with hands-on execution for enterprises across Singapore and India.
+              <span className="text-white font-medium">Executive Search</span> to{' '}
+              <span className="text-white font-medium">Permanent Placement</span> and{' '}
+              <span className="text-white font-medium">Contract Staffing</span> — we combine
+              deep market insight with a precision talent network to build high-performing
+              teams across Singapore and India.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-20">
@@ -116,7 +115,7 @@ export default function Hero() {
                 onClick={() => handleScroll('#services')}
                 className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 hover:scale-[1.02] text-sm"
               >
-                Explore Our Services
+                Our Services
               </button>
               <button
                 onClick={() => handleScroll('#contact')}
@@ -125,7 +124,7 @@ export default function Hero() {
                 onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(15,118,110,0.18)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(15,118,110,0.8)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(15,118,110,0.08)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(15,118,110,0.5)'; }}
               >
-                Start a Project
+                Find Talent
               </button>
             </div>
 

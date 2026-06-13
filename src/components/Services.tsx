@@ -11,15 +11,16 @@ export default function Services() {
           </p>
           <div className="w-12 h-[3px] bg-blue-600 rounded-full mx-auto mb-7" />
           <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-5 tracking-tight">
-            Comprehensive Technology Services
+            Recruitment & Human Capital Solutions
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed">
-            From strategy through execution, we deliver the full spectrum of technology consulting
-            services that modern enterprises need to compete and grow.
+            We specialise in delivering comprehensive recruitment and human capital solutions
+            tailored to the unique needs of each organisation — enabling businesses to attract
+            and retain the right talent while optimising workforce strategies.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-3 gap-7">
           {SERVICES.map((service) => {
             const Icon = service.icon;
             return (

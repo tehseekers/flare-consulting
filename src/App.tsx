@@ -2,10 +2,11 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import TechStack from './components/TechStack';
 import Industries from './components/Industries';
-import Portfolio from './components/Portfolio';
+import CoreCapabilities from './components/TechStack';
+import OurApproach from './components/Portfolio';
 import WhyUs from './components/WhyUs';
+import PDPA from './components/PDPA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -16,10 +17,11 @@ export default function App() {
       <Hero />
       <About />
       <Services />
-      <TechStack />
       <Industries />
-      <Portfolio />
+      <CoreCapabilities />
+      <OurApproach />
       <WhyUs />
+      <PDPA />
       <Contact />
       <Footer />
     </div>

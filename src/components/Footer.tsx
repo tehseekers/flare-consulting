@@ -1,4 +1,4 @@
-import { Zap, MapPin, Phone, Mail, Globe } from 'lucide-react';
+import { MapPin, Phone, Mail, Globe } from 'lucide-react';
 import { NAV_LINKS, SERVICES } from '../data/content';
 
 export default function Footer() {
@@ -13,23 +13,29 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5 mb-5">
-              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                <Zap className="w-4 h-4 text-white" strokeWidth={2.5} />
+            <div className="flex items-center gap-3 mb-5">
+              <div className="rounded-xl overflow-hidden bg-white p-1 flex-shrink-0">
+                <img
+                  src="/image.png"
+                  alt="Flare Consultancy"
+                  className="h-10 w-auto object-contain block"
+                  style={{ maxWidth: '58px' }}
+                />
               </div>
               <div>
                 <span className="text-white font-bold text-base tracking-tight">
-                  Flare <span className="text-blue-400">Consulting</span>
+                  Flare <span className="text-blue-400">Consultancy</span>
                 </span>
-                <div className="text-[9px] tracking-[0.2em] uppercase text-slate-600 font-semibold mt-0.5">Enterprise Advisory</div>
+                <div className="text-[9px] tracking-[0.2em] uppercase text-slate-600 font-semibold mt-0.5">Staffing Solutions</div>
               </div>
             </div>
-            <p className="text-slate-500 text-sm leading-relaxed mb-6">
-              Igniting digital transformation across Asia — AI, Cloud, ERP, and IT consulting
-              for the modern enterprise.
+            <p className="text-slate-500 text-sm leading-relaxed mb-5">
+              Connecting Asia's best talent with the right organisations — pure-play staffing
+              solutions across Singapore and India.
             </p>
-            <p className="text-xs text-slate-700">
-              UEN <span className="font-mono text-slate-500">202401794Z</span>
+            <p className="text-xs text-slate-700 space-y-1">
+              <span className="block">UEN <span className="font-mono text-slate-500">202401794Z</span></span>
+              <span className="block">EA License <span className="font-mono text-slate-500">24C2464</span></span>
             </p>
           </div>
 
@@ -91,11 +97,11 @@ export default function Footer() {
 
         <div className="border-t border-slate-800/60 pt-8 space-y-2">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <p className="text-slate-600 text-xs">© 2024 Flare Consulting Pte. Ltd. All rights reserved.</p>
-            <p className="text-slate-700 text-xs font-mono">Company Registration No. 202401794Z</p>
+            <p className="text-slate-600 text-xs">© 2024 Flare Consultancy Pte. Ltd. All rights reserved.</p>
+            <p className="text-slate-700 text-xs font-mono">EA License No. 24C2464 · UEN 202401794Z</p>
           </div>
           <p className="text-slate-700 text-xs leading-relaxed">
-            Flare Consulting Pte. Ltd. is incorporated and registered in Singapore. Registered address: 2 Venture Drive #11-05 Vision Exchange, Singapore 608526.
+            Flare Consultancy Pte. Ltd. is incorporated and registered in Singapore. Registered address: 2 Venture Drive #11-05 Vision Exchange, Singapore 608526.
           </p>
         </div>
       </div>

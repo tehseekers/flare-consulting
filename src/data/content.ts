@@ -1,33 +1,34 @@
 import {
-  Brain,
-  Cloud,
-  Code2,
-  Database,
-  FolderKanban,
-  Lightbulb,
+  Search,
+  Users,
+  Briefcase,
+  Monitor,
+  Cpu,
+  DollarSign,
+  Wrench,
   Globe,
   ShieldCheck,
-  Layers,
   Rocket,
-  Users,
-  TrendingUp,
-  CheckCircle,
   Award,
   Zap,
+  CheckCircle,
   HeadphonesIcon,
+  Clock,
+  Target,
+  Scale,
 } from 'lucide-react';
 
 export const NAV_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
-  { label: 'AI & Data', href: '#expertise' },
-  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Industries', href: '#industries' },
+  { label: 'Approach', href: '#approach' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const HERO_STATS = [
-  { value: 50, suffix: '+', label: 'Projects Delivered' },
+  { value: 500, suffix: '+', label: 'Placements Made' },
   { value: 10, suffix: '+', label: 'Years Expertise' },
   { value: 2, suffix: '', label: 'Countries' },
   { value: 100, suffix: '%', label: 'Client Satisfaction' },
@@ -35,207 +36,179 @@ export const HERO_STATS = [
 
 export const HERO_FLOAT_CARDS = [
   {
-    icon: Brain,
+    icon: Search,
     color: '#3b82f6',
-    title: 'AI Engine Deployed',
-    detail: 'Credit Risk Model — 94.7% accuracy',
-    badge: 'Live',
+    title: 'Executive Search',
+    detail: 'VP Engineering placed — FinTech sector',
+    badge: 'Placed',
   },
   {
-    icon: Cloud,
-    color: '#0ea5e9',
-    title: 'Cloud Migration',
-    detail: '200+ workloads — 55% cost savings',
-    badge: 'Completed',
+    icon: Users,
+    color: '#0F766E',
+    title: 'Permanent Hire',
+    detail: 'Senior Data Scientist — Regional Bank',
+    badge: 'Onboarded',
   },
   {
-    icon: Database,
-    color: '#10b981',
-    title: 'ERP Go-Live',
-    detail: 'SAP S/4HANA — 5 entities unified',
+    icon: Briefcase,
+    color: '#f59e0b',
+    title: 'Contract Staffing',
+    detail: '12-person DevOps team deployed in 8 weeks',
     badge: 'Active',
   },
 ];
 
 export const SERVICES = [
   {
-    icon: Brain,
-    title: 'AI & Machine Learning',
+    icon: Search,
+    title: 'Executive Search',
     description:
-      'End-to-end AI strategy, model development, and intelligent automation that delivers measurable business outcomes.',
+      'Our Executive Search services focus on identifying and securing senior leadership talent who can drive strategic growth and transformation. We adopt a targeted and confidential approach to source high-calibre executives aligned with your organisation\'s vision and culture.',
     color: '#3b82f6',
   },
   {
-    icon: Cloud,
-    title: 'Cloud Solutions',
+    icon: Users,
+    title: 'Permanent Placement',
     description:
-      'Seamless cloud migration, multi-cloud architecture design, and continuous cost optimisation across AWS, Azure, and GCP.',
-    color: '#0ea5e9',
+      'Our Permanent Placement services are focused on identifying and securing high-quality talent aligned with your organisation\'s long-term goals and culture. We leverage structured sourcing and rigorous evaluation to ensure the right fit for sustained success.',
+    color: '#0F766E',
   },
   {
-    icon: Code2,
-    title: 'Software Development',
+    icon: Briefcase,
+    title: 'Contract Staffing',
     description:
-      'Custom enterprise applications, scalable APIs, and digital products built with modern technology stacks.',
-    color: '#8b5cf6',
-  },
-  {
-    icon: Database,
-    title: 'ERP Implementations',
-    description:
-      'Full-cycle ERP delivery across SAP, Oracle, and Microsoft Dynamics — from blueprinting to go-live and beyond.',
-    color: '#10b981',
-  },
-  {
-    icon: FolderKanban,
-    title: 'IT Project Management',
-    description:
-      'Structured governance and agile delivery for large-scale IT programmes, ensuring on-time, on-budget outcomes.',
+      'Our Contract Staffing services provide flexible access to skilled professionals, enabling organisations to scale their workforce in line with project demands. We ensure timely deployment of quality talent while maintaining compliance and operational efficiency.',
     color: '#f59e0b',
-  },
-  {
-    icon: Lightbulb,
-    title: 'Digital Transformation',
-    description:
-      'Holistic consulting to reimagine processes, culture, and technology — turning strategy into enterprise-wide change.',
-    color: '#ef4444',
-  },
-];
-
-export const TECH_STACK = [
-  'AWS', 'Azure', 'GCP', 'SAP', 'Oracle', 'Microsoft Dynamics',
-  'React', 'Node.js', 'Python', 'TypeScript', 'Java', 'TensorFlow',
-  'PyTorch', 'Docker', 'Kubernetes', 'Terraform', 'Power BI',
-  'Tableau', 'PostgreSQL', 'MongoDB', 'Snowflake', 'Databricks',
-  'Apache Kafka', 'Salesforce',
-];
-
-export const AI_CAPABILITY_BARS = [
-  { label: 'Predictive Analytics', value: 96 },
-  { label: 'Natural Language Processing', value: 94 },
-  { label: 'Recommendation Engines', value: 93 },
-  { label: 'Anomaly Detection', value: 91 },
-  { label: 'Computer Vision', value: 89 },
-  { label: 'Process Automation', value: 87 },
-];
-
-export const AI_TOP_METRICS = [
-  { label: 'Model Accuracy', display: '94.7', suffix: '%', animateTo: 94.7, decimals: 1 },
-  { label: 'Processing Speed', display: '10', suffix: 'x', animateTo: 10, decimals: 0 },
-  { label: 'Records / Day', display: '2.4', suffix: 'B+', animateTo: 2.4, decimals: 1 },
-  { label: 'Cost Reduction', display: '45', suffix: '%', animateTo: 45, decimals: 0 },
-];
-
-export const AI_CIRCLE_METRICS = [
-  { label: 'Automation Coverage', value: 78, color: '#3b82f6' },
-  { label: 'AI ROI Delivery', value: 94, color: '#0F766E' },
-];
-
-export const EXPERTISE_PILLARS = [
-  {
-    icon: Lightbulb,
-    title: 'Strategy',
-    description: 'Technology roadmaps aligned to your business goals and growth ambitions.',
-  },
-  {
-    icon: Rocket,
-    title: 'Implementation',
-    description: 'Disciplined delivery from architecture through production deployment.',
-  },
-  {
-    icon: HeadphonesIcon,
-    title: 'Support',
-    description: 'Managed services and hypercare that keep your systems running at peak performance.',
   },
 ];
 
 export const INDUSTRIES = [
-  { icon: TrendingUp, label: 'Banking & Finance' },
-  { icon: ShieldCheck, label: 'Healthcare' },
-  { icon: Layers, label: 'Manufacturing' },
-  { icon: Globe, label: 'Retail' },
-  { icon: Award, label: 'Government' },
-  { icon: Rocket, label: 'Logistics' },
-  { icon: Zap, label: 'Telecommunications' },
-  { icon: Users, label: 'Education' },
+  {
+    icon: Monitor,
+    label: 'Information Technology',
+    description:
+      'High-quality technology talent across enterprise systems, infrastructure, managed services, and application development — helping organisations build and scale robust digital capabilities.',
+    color: '#3b82f6',
+  },
+  {
+    icon: Cpu,
+    label: 'Digital Transformation',
+    description:
+      'From cloud and DevOps to AI/ML and data analytics, we connect businesses with the talent needed to accelerate transformation and stay competitive in a rapidly evolving landscape.',
+    color: '#0ea5e9',
+  },
+  {
+    icon: DollarSign,
+    label: 'FinTech',
+    description:
+      'Specialised talent across payments, lending, blockchain, compliance, and product engineering — enabling innovation and speed to market in the fast-growing FinTech ecosystem.',
+    color: '#0F766E',
+  },
+  {
+    icon: Wrench,
+    label: 'Engineering & Technology Services',
+    description:
+      'Skilled engineering professionals to support complex, large-scale projects, ensuring delivery excellence and operational continuity.',
+    color: '#f59e0b',
+  },
 ];
 
-export const PORTFOLIO = [
+export const CAPABILITIES = [
   {
-    tag: 'AI Implementation',
-    tagBg: 'rgba(59,130,246,0.1)',
-    tagColor: '#3b82f6',
-    accentColor: '#3b82f6',
-    title: 'Predictive Analytics Platform for Regional Bank',
+    icon: Globe,
+    title: 'Access to Top Talent, Globally',
     description:
-      'Designed and deployed a machine-learning-driven credit risk scoring engine, replacing a legacy rules-based system and enabling real-time loan decisioning across 12 branches.',
-    metrics: [
-      { value: '40%', label: 'Reduction in default rate' },
-      { value: '3x', label: 'Faster loan decisioning' },
-    ],
+      'Our extensive networks across Asia-Pacific and beyond enable us to quickly identify and deliver high-calibre local and international talent — giving you a competitive edge.',
+    color: '#3b82f6',
   },
   {
-    tag: 'Cloud Migration',
-    tagBg: 'rgba(14,165,233,0.1)',
-    tagColor: '#0ea5e9',
-    accentColor: '#0ea5e9',
-    title: 'Enterprise Cloud Transformation for Logistics Leader',
+    icon: CheckCircle,
+    title: 'Quality-First, Right-Fit Hiring',
     description:
-      'Migrated 200+ on-premise workloads to a hybrid AWS / Azure environment, implementing automated CI/CD pipelines and centralised observability across all business units.',
-    metrics: [
-      { value: '55%', label: 'Infrastructure cost savings' },
-      { value: '99.99%', label: 'Uptime achieved' },
-    ],
+      'We go beyond resumes. Every candidate is carefully screened for technical expertise, experience, and cultural alignment — ensuring they contribute from day one.',
+    color: '#0F766E',
   },
   {
-    tag: 'ERP Implementation',
-    tagBg: 'rgba(16,185,129,0.1)',
-    tagColor: '#10b981',
-    accentColor: '#10b981',
-    title: 'SAP S/4HANA Rollout for Manufacturing Conglomerate',
+    icon: Zap,
+    title: 'Fast, Agile & Scalable Delivery',
     description:
-      'Led a 14-month greenfield SAP S/4HANA implementation across 5 legal entities, consolidating finance, procurement, and supply-chain operations onto a single platform.',
-    metrics: [
-      { value: '60%', label: 'Faster month-end close' },
-      { value: '5', label: 'Entities unified' },
-    ],
+      'Whether you need one specialist or an entire team, we respond quickly and scale seamlessly to meet your business demands.',
+    color: '#f59e0b',
+  },
+  {
+    icon: Target,
+    title: 'Consultative, Outcome-Driven Approach',
+    description:
+      'We don\'t just fill roles — we solve hiring challenges. By understanding your business goals, we deliver tailored talent solutions that drive real impact.',
+    color: '#0ea5e9',
+  },
+];
+
+export const APPROACH = [
+  {
+    icon: HeadphonesIcon,
+    title: 'Client-Centric',
+    description:
+      'We focus on understanding your business needs and delivering tailored talent solutions for every engagement.',
+    color: '#3b82f6',
+  },
+  {
+    icon: Clock,
+    title: 'Speed & Efficiency',
+    description:
+      'Quick turnaround times without compromising on quality — responsive delivery from first brief to final placement.',
+    color: '#0F766E',
+  },
+  {
+    icon: Award,
+    title: 'Quality-Driven',
+    description:
+      'Rigorous screening processes ensure the right fit for every role, every time.',
+    color: '#f59e0b',
+  },
+  {
+    icon: Scale,
+    title: 'Scalable Solutions',
+    description:
+      'Support for both niche, high-value hiring and large-scale workforce ramp-ups with equal precision.',
+    color: '#0ea5e9',
   },
 ];
 
 export const WHY_US = [
   {
     icon: Globe,
-    title: 'Asia-Pacific Expertise',
+    title: 'Singapore-Based, Regional Reach',
     description:
-      'Deep on-the-ground knowledge of Singapore and India markets, regulatory environments, and enterprise ecosystems.',
+      'Headquartered in Singapore with a strong operational presence in India — combining local expertise with regional scale across Asia-Pacific.',
     color: '#3b82f6',
   },
   {
-    icon: CheckCircle,
-    title: 'End-to-End Delivery',
+    icon: Users,
+    title: 'Wide & Diverse Talent Pool',
     description:
-      'From advisory through implementation to managed support — one partner for the entire project lifecycle.',
-    color: '#0F766E',
-  },
-  {
-    icon: Award,
-    title: 'Certified Professionals',
-    description:
-      'Our consultants hold certifications across AWS, Azure, SAP, Oracle, PMP, and leading AI frameworks.',
+      'Access to a deep and diverse network of candidates across technology, finance, and engineering disciplines.',
     color: '#0F766E',
   },
   {
     icon: Zap,
-    title: 'Agile & Scalable',
+    title: 'Agile & Responsive',
     description:
-      'Flexible engagement models and a proven agile delivery framework that adapts to your pace and scale.',
+      'Our agile delivery model adapts quickly to your hiring needs — from urgent placements to large-scale workforce ramps.',
     color: '#f59e0b',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Long-Term Partnerships',
+    description:
+      'We build lasting relationships with clients and candidates alike, anchored by trust, transparency, and results.',
+    color: '#0ea5e9',
   },
 ];
 
 export const ABOUT_BULLETS = [
-  { icon: Rocket, text: 'Proven track record delivering complex IT programmes on schedule and within budget', color: '#3b82f6' },
+  { icon: Rocket, text: 'Pure-play staffing firm with precision talent matching across Asia-Pacific', color: '#3b82f6' },
   { icon: Globe, text: 'Dual presence in Singapore and India enabling cost-effective, round-the-clock delivery', color: '#0F766E' },
-  { icon: Users, text: 'Senior consultants averaging 10+ years of hands-on enterprise experience', color: '#0F766E' },
-  { icon: Award, text: 'Technology-agnostic approach focused entirely on your business outcomes', color: '#f59e0b' },
+  { icon: Users, text: 'Consultants with deep market insight and extensive regional talent networks', color: '#0F766E' },
+  { icon: Award, text: 'Client-centric and outcome-driven — focused entirely on your business success', color: '#f59e0b' },
 ];
