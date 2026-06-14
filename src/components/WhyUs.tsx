@@ -39,11 +39,11 @@ export default function WhyUs() {
                 <div
                   className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110"
                   style={{
-                    background: `${item.color}18`,
-                    border: `1px solid ${item.color}30`,
+                    background: 'rgba(255,255,255,0.12)',
+                    border: '1px solid rgba(255,255,255,0.22)',
                   }}
                 >
-                  <Icon className="w-6 h-6" style={{ color: item.color }} />
+                  <Icon className="w-6 h-6" style={{ color: '#F5D87A' }} />
                 </div>
                 <h3 className="text-base font-extrabold text-white mb-3 tracking-tight">{item.title}</h3>
                 <div className="w-8 h-[2px] rounded-full mb-4 transition-all duration-300 group-hover:w-14 gold-divider" />

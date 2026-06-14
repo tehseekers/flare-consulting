@@ -170,9 +170,9 @@ export default function Hero() {
                   <div className="flex items-start justify-between mb-3">
                     <div
                       className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                      style={{ background: `${card.color}20`, border: `1px solid ${card.color}35` }}
+                      style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}
                     >
-                      <Icon className="w-4 h-4" style={{ color: card.color }} />
+                      <Icon className="w-4 h-4" style={{ color: '#F5D87A' }} />
                     </div>
                     <span
                       className="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"
