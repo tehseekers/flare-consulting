@@ -4,16 +4,15 @@ export default function WhyUs() {
   return (
     <section
       className="py-28"
-      style={{ background: 'linear-gradient(135deg, #020817 0%, #0b1120 100%)' }}
+      style={{ background: 'linear-gradient(145deg, #040D1C 0%, #071428 100%)' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-16">
-          <p className="text-blue-400 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
+          <p className="text-xs font-bold uppercase tracking-[0.35em] mb-4" style={{ color: '#C9A84C' }}>
             Why Flare
           </p>
           <div
-            className="w-12 h-[3px] rounded-full mx-auto mb-7"
-            style={{ background: 'linear-gradient(90deg, #1E82C8, #38BDF8)' }}
+            className="w-12 h-[3px] rounded-full mx-auto mb-7 gold-divider"
           />
           <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-5 tracking-tight">
             Why Flare Consulting
@@ -30,26 +29,24 @@ export default function WhyUs() {
             return (
               <div
                 key={item.title}
-                className="p-8 rounded-2xl hover:-translate-y-1.5 transition-all duration-300 group cursor-default border"
+                className="p-8 rounded-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default border"
                 style={{
                   background: 'rgba(255,255,255,0.03)',
-                  borderColor: 'rgba(255,255,255,0.07)',
+                  borderColor: 'rgba(201,168,76,0.12)',
+                  borderTop: '2px solid rgba(201,168,76,0.4)',
                 }}
               >
                 <div
                   className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110"
                   style={{
-                    background: `${item.color}15`,
-                    border: `1px solid ${item.color}25`,
+                    background: `${item.color}18`,
+                    border: `1px solid ${item.color}30`,
                   }}
                 >
-                  <Icon className="w-6 h-6 transition-colors duration-300" style={{ color: item.color }} />
+                  <Icon className="w-6 h-6" style={{ color: item.color }} />
                 </div>
-                <h3 className="text-base font-bold text-white mb-3 tracking-tight">{item.title}</h3>
-                <div
-                  className="w-8 h-[2px] rounded-full mb-4 transition-all duration-300 group-hover:w-14"
-                  style={{ background: item.color }}
-                />
+                <h3 className="text-base font-extrabold text-white mb-3 tracking-tight">{item.title}</h3>
+                <div className="w-8 h-[2px] rounded-full mb-4 transition-all duration-300 group-hover:w-14 gold-divider" />
                 <p className="text-slate-400 text-sm leading-relaxed">{item.description}</p>
               </div>
             );

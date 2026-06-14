@@ -8,7 +8,7 @@ export default function Footer() {
   };
 
   return (
-    <footer style={{ background: '#020817', borderTop: '1px solid rgba(59,130,246,0.1)' }}>
+    <footer style={{ background: '#040D1C', borderTop: '1px solid rgba(201,168,76,0.15)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
@@ -23,15 +23,15 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <span className="text-white font-bold text-base tracking-tight">
-                  Flare <span className="text-blue-400">Consulting</span>
+                <span className="text-white font-extrabold text-base tracking-tight">
+                  Flare <span style={{ color: '#C9A84C' }}>Consulting</span>
                 </span>
-                <div className="text-[9px] tracking-[0.2em] uppercase text-slate-600 font-semibold mt-0.5">Staffing Solutions</div>
+                <div className="text-[9px] tracking-[0.2em] uppercase font-semibold mt-0.5" style={{ color: 'rgba(201,168,76,0.5)' }}>Staffing Solutions</div>
               </div>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-5">
               Connecting Asia's best talent with the right organisations — pure-play staffing
-              solutions across Singapore and India.
+              solutions across Singapore, India and Malaysia.
             </p>
             <p className="text-xs text-slate-700 space-y-1">
               <span className="block">UEN <span className="font-mono text-slate-500">202401794Z</span></span>
@@ -41,7 +41,7 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="text-slate-300 text-xs font-bold uppercase tracking-[0.25em] mb-6 pb-3 border-b border-slate-800">
+            <h4 className="text-slate-300 text-xs font-bold uppercase tracking-[0.25em] mb-6 pb-3 border-b" style={{ borderColor: 'rgba(201,168,76,0.2)' }}>
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-slate-300 text-xs font-bold uppercase tracking-[0.25em] mb-6 pb-3 border-b border-slate-800">
+            <h4 className="text-slate-300 text-xs font-bold uppercase tracking-[0.25em] mb-6 pb-3 border-b" style={{ borderColor: 'rgba(201,168,76,0.2)' }}>
               Services
             </h4>
             <ul className="space-y-3">
@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-slate-300 text-xs font-bold uppercase tracking-[0.25em] mb-6 pb-3 border-b border-slate-800">
+            <h4 className="text-slate-300 text-xs font-bold uppercase tracking-[0.25em] mb-6 pb-3 border-b" style={{ borderColor: 'rgba(201,168,76,0.2)' }}>
               Contact
             </h4>
             <ul className="space-y-4">
@@ -86,7 +86,7 @@ export default function Footer() {
                 const Icon = item.icon;
                 return (
                   <li key={item.text} className="flex items-start gap-3">
-                    <Icon className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                    <Icon className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#C9A84C' }} />
                     <span className="text-slate-500 text-sm whitespace-pre-line leading-relaxed">{item.text}</span>
                   </li>
                 );
@@ -95,7 +95,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800/60 pt-8 space-y-2">
+        <div className="border-t pt-8 space-y-2" style={{ borderColor: 'rgba(201,168,76,0.12)' }}>
           <div className="flex flex-wrap items-center justify-between gap-4">
             <p className="text-slate-600 text-xs">© 2024 Flare Consulting Pte. Ltd. All rights reserved.</p>
             <p className="text-slate-700 text-xs font-mono">EA License No. 24C2464 · UEN 202401794Z</p>

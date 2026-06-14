@@ -23,10 +23,10 @@ function StatItem({ stat }: { stat: (typeof HERO_STATS)[0] }) {
   const val = useCountUp(stat.value, 2200, true, 0);
   return (
     <div className="text-center sm:text-left">
-      <div className="text-4xl font-extrabold text-white mb-1 tabular-nums">
+      <div className="text-4xl font-extrabold mb-1 tabular-nums" style={{ color: '#C9A84C' }}>
         {val}{stat.suffix}
       </div>
-      <div className="text-sm text-slate-400 tracking-wide">{stat.label}</div>
+      <div className="text-xs text-slate-400 tracking-widest uppercase font-medium">{stat.label}</div>
     </div>
   );
 }
@@ -38,77 +38,81 @@ export default function Hero() {
   };
 
   const floatClasses = ['animate-float-1', 'animate-float-2', 'animate-float-3'];
-  const badgeColors: Record<string, string> = {
-    Placed: 'bg-blue-500/20 text-blue-300',
-    Onboarded: 'bg-teal-500/20 text-teal-300',
-    Active: 'bg-amber-500/20 text-amber-300',
-  };
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex flex-col justify-center overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #020817 0%, #0b1120 55%, #0d1a3a 100%)' }}
+      style={{ background: 'linear-gradient(145deg, #040D1C 0%, #071428 55%, #0A1A3A 100%)' }}
     >
-      {/* Grid overlay */}
+      {/* Subtle grid overlay */}
       <div
-        className="absolute inset-0 opacity-[0.06]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: `linear-gradient(rgba(59,130,246,0.8) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(59,130,246,0.8) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px',
+          backgroundImage: `linear-gradient(rgba(201,168,76,0.8) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(201,168,76,0.8) 1px, transparent 1px)`,
+          backgroundSize: '72px 72px',
         }}
       />
 
-      {/* Top-right blue glow */}
+      {/* Gold glow top-right */}
       <div
-        className="absolute top-0 right-0 w-[800px] h-[800px] pointer-events-none"
+        className="absolute top-0 right-0 w-[900px] h-[900px] pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at 70% 30%, rgba(59,130,246,0.12) 0%, transparent 60%)',
+          background: 'radial-gradient(circle at 70% 20%, rgba(201,168,76,0.07) 0%, transparent 55%)',
         }}
       />
-      {/* Bottom-left glow */}
+      {/* Blue glow bottom-left */}
       <div
-        className="absolute bottom-0 left-0 w-[600px] h-[600px] pointer-events-none"
+        className="absolute bottom-0 left-0 w-[700px] h-[700px] pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at 30% 70%, rgba(30,130,200,0.08) 0%, transparent 60%)',
+          background: 'radial-gradient(circle at 20% 80%, rgba(30,130,200,0.08) 0%, transparent 55%)',
         }}
       />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left: headline content */}
+        <div className="grid lg:grid-cols-2 gap-14 items-center">
+          {/* Left: headline */}
           <div>
             {/* Presence badges */}
             <div className="flex flex-wrap gap-2.5 mb-8">
-              <span className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-medium px-4 py-1.5 rounded-full">
-                <span>🇸🇬</span> Singapore HQ
-              </span>
-              <span className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-medium px-4 py-1.5 rounded-full">
-                <span>🇮🇳</span> India
-              </span>
-              <span className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-medium px-4 py-1.5 rounded-full">
-                <span>🇲🇾</span> Malaysia
-              </span>
+              {[
+                { flag: '🇸🇬', label: 'Singapore HQ' },
+                { flag: '🇮🇳', label: 'India' },
+                { flag: '🇲🇾', label: 'Malaysia' },
+              ].map((b) => (
+                <span
+                  key={b.label}
+                  className="inline-flex items-center gap-2 text-xs font-semibold px-4 py-1.5 rounded-full border"
+                  style={{
+                    background: 'rgba(201,168,76,0.07)',
+                    borderColor: 'rgba(201,168,76,0.25)',
+                    color: '#E8C867',
+                  }}
+                >
+                  <span>{b.flag}</span> {b.label}
+                </span>
+              ))}
             </div>
 
-            <p className="text-blue-400 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
+            <p className="text-xs font-bold uppercase tracking-[0.35em] mb-5" style={{ color: '#C9A84C' }}>
               Staffing Solutions · Asia-Pacific
             </p>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-[64px] font-extrabold text-white leading-[1.05] tracking-tight mb-7">
+            <h1 className="text-5xl sm:text-6xl lg:text-[66px] font-extrabold text-white leading-[1.04] tracking-tight mb-7">
               Connecting
               <br />
               <span className="text-gradient-blue">Asia's Best</span>
               <br />
-              <span className="text-gradient-blue">Talent</span>{' '}with You
+              <span className="text-gradient-blue">Talent</span>{' '}
+              <span className="text-white">with You</span>
             </h1>
 
             <p className="text-lg text-slate-300 max-w-xl mb-10 leading-relaxed">
               From{' '}
-              <span className="text-white font-medium">Executive Search</span> to{' '}
-              <span className="text-white font-medium">Permanent Placement</span> and{' '}
-              <span className="text-white font-medium">Contract Staffing</span> — we combine
+              <span className="text-white font-semibold">Executive Search</span> to{' '}
+              <span className="text-white font-semibold">Permanent Placement</span> and{' '}
+              <span className="text-white font-semibold">Contract Staffing</span> — we combine
               deep market insight with a precision talent network to build high-performing
               teams across Singapore, India, and Malaysia.
             </p>
@@ -116,30 +120,45 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 mb-20">
               <button
                 onClick={() => handleScroll('#services')}
-                className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 hover:scale-[1.02] text-sm"
+                className="text-sm font-bold px-8 py-4 rounded-xl transition-all duration-200 hover:scale-[1.03]"
+                style={{
+                  background: 'linear-gradient(135deg, #C9A84C, #E8C867)',
+                  color: '#040D1C',
+                  boxShadow: '0 6px 28px rgba(201,168,76,0.35)',
+                }}
               >
                 Our Services
               </button>
               <button
                 onClick={() => handleScroll('#contact')}
-                className="font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-sm"
-                style={{ border: '1px solid rgba(30,130,200,0.5)', color: '#7DD3FC', background: 'rgba(30,130,200,0.08)' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(30,130,200,0.18)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(30,130,200,0.8)'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(30,130,200,0.08)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(30,130,200,0.5)'; }}
+                className="text-sm font-semibold px-8 py-4 rounded-xl transition-all duration-200 border hover:scale-[1.02]"
+                style={{
+                  border: '1px solid rgba(30,130,200,0.4)',
+                  color: '#7DD3FC',
+                  background: 'rgba(30,130,200,0.07)',
+                }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLElement).style.background = 'rgba(30,130,200,0.16)';
+                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(30,130,200,0.7)';
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLElement).style.background = 'rgba(30,130,200,0.07)';
+                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(30,130,200,0.4)';
+                }}
               >
                 Find Talent
               </button>
             </div>
 
             {/* Stats row */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 border-t border-white/8 pt-10">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 border-t pt-10" style={{ borderColor: 'rgba(201,168,76,0.15)' }}>
               {HERO_STATS.map((stat) => (
                 <StatItem key={stat.label} stat={stat} />
               ))}
             </div>
           </div>
 
-          {/* Right: floating project cards */}
+          {/* Right: floating cards */}
           <div className="hidden lg:flex flex-col items-end gap-5 pr-4">
             {HERO_FLOAT_CARDS.map((card, i) => {
               const Icon = card.icon;
@@ -147,21 +166,23 @@ export default function Hero() {
                 <div
                   key={card.title}
                   className={`${floatClasses[i]} glass-card rounded-2xl px-5 py-4 w-72`}
-                  style={{ boxShadow: `0 4px 30px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.06)` }}
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div
                       className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                      style={{ background: `${card.color}20`, border: `1px solid ${card.color}30` }}
+                      style={{ background: `${card.color}20`, border: `1px solid ${card.color}35` }}
                     >
                       <Icon className="w-4 h-4" style={{ color: card.color }} />
                     </div>
-                    <span className={`text-[10px] font-semibold px-2.5 py-1 rounded-full ${badgeColors[card.badge]}`}>
-                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-current mr-1.5 animate-pulse-dot" />
+                    <span
+                      className="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider"
+                      style={{ background: 'rgba(201,168,76,0.15)', color: '#E8C867' }}
+                    >
+                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-yellow-400 mr-1.5 animate-pulse-dot" />
                       {card.badge}
                     </span>
                   </div>
-                  <p className="text-white text-sm font-semibold mb-1">{card.title}</p>
+                  <p className="text-white text-sm font-bold mb-1">{card.title}</p>
                   <p className="text-slate-400 text-xs leading-relaxed">{card.detail}</p>
                 </div>
               );

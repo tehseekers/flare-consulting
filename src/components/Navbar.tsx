@@ -22,12 +22,12 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100'
+          ? 'bg-white/98 backdrop-blur-md shadow-md border-b border-slate-100'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex items-center justify-between py-3">
+        <div className="flex items-center justify-between py-3.5">
           {/* Logo */}
           <button onClick={() => handleNav('#home')} className="flex items-center gap-3 group">
             <div className="rounded-xl overflow-hidden bg-white p-1 shadow-md flex-shrink-0">
@@ -41,9 +41,9 @@ export default function Navbar() {
             <div>
               <span className={`font-bold text-[15px] tracking-tight transition-colors duration-300 ${scrolled ? 'text-slate-900' : 'text-white'}`}>
                 Flare{' '}
-                <span className={scrolled ? 'text-blue-600' : 'text-blue-400'}>Consulting</span>
+                <span style={{ color: '#C9A84C' }}>Consulting</span>
               </span>
-              <div className={`text-[9px] tracking-[0.22em] uppercase font-semibold transition-colors duration-300 ${scrolled ? 'text-slate-400' : 'text-blue-300/70'}`}>
+              <div className={`text-[9px] tracking-[0.22em] uppercase font-semibold transition-colors duration-300 ${scrolled ? 'text-slate-400' : 'text-slate-300/70'}`}>
                 Staffing Solutions
               </div>
             </div>
@@ -55,10 +55,10 @@ export default function Navbar() {
               <button
                 key={link.href}
                 onClick={() => handleNav(link.href)}
-                className={`text-sm font-medium transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-[2px] after:bg-blue-500 hover:after:w-full after:transition-all after:duration-300 ${
+                className={`text-sm font-medium transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-[2px] hover:after:w-full after:transition-all after:duration-300 ${
                   scrolled
-                    ? 'text-slate-600 hover:text-slate-900'
-                    : 'text-slate-200 hover:text-white'
+                    ? 'text-slate-600 hover:text-slate-900 after:bg-yellow-500'
+                    : 'text-slate-200 hover:text-white after:bg-yellow-400'
                 }`}
               >
                 {link.label}
@@ -70,7 +70,12 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <button
               onClick={() => handleNav('#contact')}
-              className="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 shadow-md shadow-blue-600/20 hover:shadow-blue-500/30 hover:scale-[1.02]"
+              className="text-sm font-bold px-5 py-2.5 rounded-lg transition-all duration-200 hover:scale-[1.03] shadow-lg"
+              style={{
+                background: 'linear-gradient(135deg, #C9A84C, #E8C867)',
+                color: '#040D1C',
+                boxShadow: '0 4px 20px rgba(201,168,76,0.35)',
+              }}
             >
               Find Talent
             </button>
@@ -88,19 +93,20 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-slate-100 px-6 pb-6 pt-2 space-y-1 shadow-lg">
+        <div className="md:hidden bg-white border-t border-slate-100 px-6 pb-6 pt-2 space-y-1 shadow-xl">
           {NAV_LINKS.map((link) => (
             <button
               key={link.href}
               onClick={() => handleNav(link.href)}
-              className="block w-full text-left text-slate-600 hover:text-blue-600 py-3.5 text-sm font-medium border-b border-slate-50"
+              className="block w-full text-left text-slate-600 hover:text-slate-900 py-3.5 text-sm font-medium border-b border-slate-50"
             >
               {link.label}
             </button>
           ))}
           <button
             onClick={() => handleNav('#contact')}
-            className="mt-4 w-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold py-3 rounded-lg transition-colors"
+            className="mt-4 w-full text-sm font-bold py-3 rounded-lg transition-colors"
+            style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C867)', color: '#040D1C' }}
           >
             Find Talent
           </button>

@@ -3,14 +3,14 @@ import { SERVICES } from '../data/content';
 
 export default function Services() {
   return (
-    <section id="services" className="py-28 bg-slate-50">
+    <section id="services" className="py-28" style={{ background: '#F7F9FC' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-16">
-          <p className="text-blue-600 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
+          <p className="text-xs font-bold uppercase tracking-[0.35em] mb-4" style={{ color: '#C9A84C' }}>
             What We Do
           </p>
-          <div className="w-12 h-[3px] bg-blue-600 rounded-full mx-auto mb-7" />
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-5 tracking-tight">
+          <div className="w-12 h-[3px] rounded-full mx-auto mb-7 gold-divider" />
+          <h2 className="text-4xl sm:text-5xl font-extrabold mb-5 tracking-tight" style={{ color: '#040D1C' }}>
             Recruitment & Human Capital Solutions
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed">
@@ -26,25 +26,23 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className="bg-white rounded-2xl p-7 border border-slate-100 hover:border-blue-100 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                className="bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group relative overflow-hidden"
+                style={{ borderTop: '3px solid transparent' }}
+                onMouseEnter={e => (e.currentTarget as HTMLElement).style.borderTopColor = '#C9A84C'}
+                onMouseLeave={e => (e.currentTarget as HTMLElement).style.borderTopColor = 'transparent'}
               >
-                {/* Colour accent on hover */}
                 <div
-                  className="absolute top-0 inset-x-0 h-[3px] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-t-2xl"
-                  style={{ background: service.color }}
-                />
-
-                <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110"
-                  style={{ background: `${service.color}12`, border: `1px solid ${service.color}25` }}
+                  className="w-13 h-13 w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110"
+                  style={{ background: `${service.color}12`, border: `1px solid ${service.color}30` }}
                 >
-                  <Icon className="w-5 h-5 transition-colors duration-300" style={{ color: service.color }} />
+                  <Icon className="w-5 h-5" style={{ color: service.color }} />
                 </div>
 
-                <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-tight">{service.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-5">{service.description}</p>
+                <h3 className="text-lg font-extrabold mb-3 tracking-tight" style={{ color: '#040D1C' }}>{service.title}</h3>
+                <div className="w-8 h-[2px] rounded-full mb-4 transition-all duration-300 group-hover:w-14 gold-divider" />
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">{service.description}</p>
 
-                <div className="inline-flex items-center gap-1.5 text-xs font-semibold transition-all duration-200 group-hover:gap-2.5" style={{ color: service.color }}>
+                <div className="inline-flex items-center gap-1.5 text-xs font-bold transition-all duration-200 group-hover:gap-3" style={{ color: '#C9A84C' }}>
                   Learn More <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
