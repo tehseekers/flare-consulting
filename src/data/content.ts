@@ -30,7 +30,7 @@ export const NAV_LINKS = [
 export const HERO_STATS = [
   { value: 500, suffix: '+', label: 'Placements Made' },
   { value: 10, suffix: '+', label: 'Years Expertise' },
-  { value: 2, suffix: '', label: 'Countries' },
+  { value: 3, suffix: '+', label: 'Markets' },
   { value: 100, suffix: '%', label: 'Client Satisfaction' },
 ];
 
@@ -44,14 +44,14 @@ export const HERO_FLOAT_CARDS = [
   },
   {
     icon: Users,
-    color: '#0F766E',
+    color: '#1E82C8',
     title: 'Permanent Hire',
     detail: 'Senior Data Scientist — Regional Bank',
     badge: 'Onboarded',
   },
   {
     icon: Briefcase,
-    color: '#f59e0b',
+    color: '#38BDF8',
     title: 'Contract Staffing',
     detail: '12-person DevOps team deployed in 8 weeks',
     badge: 'Active',
@@ -71,14 +71,14 @@ export const SERVICES = [
     title: 'Permanent Placement',
     description:
       'Our Permanent Placement services are focused on identifying and securing high-quality talent aligned with your organisation\'s long-term goals and culture. We leverage structured sourcing and rigorous evaluation to ensure the right fit for sustained success.',
-    color: '#0F766E',
+    color: '#1E82C8',
   },
   {
     icon: Briefcase,
     title: 'Contract Staffing',
     description:
       'Our Contract Staffing services provide flexible access to skilled professionals, enabling organisations to scale their workforce in line with project demands. We ensure timely deployment of quality talent while maintaining compliance and operational efficiency.',
-    color: '#f59e0b',
+    color: '#38BDF8',
   },
 ];
 
@@ -95,21 +95,21 @@ export const INDUSTRIES = [
     label: 'Digital Transformation',
     description:
       'From cloud and DevOps to AI/ML and data analytics, we connect businesses with the talent needed to accelerate transformation and stay competitive in a rapidly evolving landscape.',
-    color: '#0ea5e9',
+    color: '#1E82C8',
   },
   {
     icon: DollarSign,
     label: 'FinTech',
     description:
       'Specialised talent across payments, lending, blockchain, compliance, and product engineering — enabling innovation and speed to market in the fast-growing FinTech ecosystem.',
-    color: '#0F766E',
+    color: '#1E82C8',
   },
   {
     icon: Wrench,
     label: 'Engineering & Technology Services',
     description:
       'Skilled engineering professionals to support complex, large-scale projects, ensuring delivery excellence and operational continuity.',
-    color: '#f59e0b',
+    color: '#38BDF8',
   },
 ];
 
@@ -126,21 +126,21 @@ export const CAPABILITIES = [
     title: 'Quality-First, Right-Fit Hiring',
     description:
       'We go beyond resumes. Every candidate is carefully screened for technical expertise, experience, and cultural alignment — ensuring they contribute from day one.',
-    color: '#0F766E',
+    color: '#1E82C8',
   },
   {
     icon: Zap,
     title: 'Fast, Agile & Scalable Delivery',
     description:
       'Whether you need one specialist or an entire team, we respond quickly and scale seamlessly to meet your business demands.',
-    color: '#f59e0b',
+    color: '#38BDF8',
   },
   {
     icon: Target,
     title: 'Consultative, Outcome-Driven Approach',
     description:
       'We don\'t just fill roles — we solve hiring challenges. By understanding your business goals, we deliver tailored talent solutions that drive real impact.',
-    color: '#0ea5e9',
+    color: '#1E82C8',
   },
 ];
 
@@ -157,30 +157,30 @@ export const APPROACH = [
     title: 'Speed & Efficiency',
     description:
       'Quick turnaround times without compromising on quality — responsive delivery from first brief to final placement.',
-    color: '#0F766E',
+    color: '#1E82C8',
   },
   {
     icon: Award,
     title: 'Quality-Driven',
     description:
       'Rigorous screening processes ensure the right fit for every role, every time.',
-    color: '#f59e0b',
+    color: '#38BDF8',
   },
   {
     icon: Scale,
     title: 'Scalable Solutions',
     description:
       'Support for both niche, high-value hiring and large-scale workforce ramp-ups with equal precision.',
-    color: '#0ea5e9',
+    color: '#1E82C8',
   },
 ];
 
 export const WHY_US = [
   {
     icon: Globe,
-    title: 'Singapore-Based, Regional Reach',
+    title: 'Singapore-Based, Asia Pacific Reach',
     description:
-      'Headquartered in Singapore with a strong operational presence in India — combining local expertise with regional scale across Asia-Pacific.',
+      'Headquartered in Singapore with our core consulting team on the ground — and a strategic talent sourcing reach spanning Singapore, India, and Malaysia.',
     color: '#3b82f6',
   },
   {
@@ -188,27 +188,27 @@ export const WHY_US = [
     title: 'Wide & Diverse Talent Pool',
     description:
       'Access to a deep and diverse network of candidates across technology, finance, and engineering disciplines.',
-    color: '#0F766E',
+    color: '#1E82C8',
   },
   {
     icon: Zap,
     title: 'Agile & Responsive',
     description:
       'Our agile delivery model adapts quickly to your hiring needs — from urgent placements to large-scale workforce ramps.',
-    color: '#f59e0b',
+    color: '#38BDF8',
   },
   {
     icon: ShieldCheck,
     title: 'Long-Term Partnerships',
     description:
       'We build lasting relationships with clients and candidates alike, anchored by trust, transparency, and results.',
-    color: '#0ea5e9',
+    color: '#1E82C8',
   },
 ];
 
 export const ABOUT_BULLETS = [
   { icon: Rocket, text: 'Pure-play staffing firm with precision talent matching across Asia-Pacific', color: '#3b82f6' },
-  { icon: Globe, text: 'Dual presence in Singapore and India enabling cost-effective, round-the-clock delivery', color: '#0F766E' },
-  { icon: Users, text: 'Consultants with deep market insight and extensive regional talent networks', color: '#0F766E' },
-  { icon: Award, text: 'Client-centric and outcome-driven — focused entirely on your business success', color: '#f59e0b' },
+  { icon: Globe, text: 'Strategic reach across Singapore, India and Malaysia — enabling pan-APAC talent sourcing', color: '#1E82C8' },
+  { icon: Users, text: 'Consultants with deep market insight and extensive regional talent networks', color: '#1E82C8' },
+  { icon: Award, text: 'Client-centric and outcome-driven — focused entirely on your business success', color: '#38BDF8' },
 ];

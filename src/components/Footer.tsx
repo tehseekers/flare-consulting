@@ -79,9 +79,9 @@ export default function Footer() {
             <ul className="space-y-4">
               {[
                 { icon: MapPin, text: '2 Venture Drive #11-05\nVision Exchange, Singapore 608526' },
-                { icon: Phone, text: '+65 9116 5003' },
-                { icon: Mail, text: 'hello@flareconsulting.sg' },
-                { icon: Globe, text: 'Singapore · India' },
+                { icon: Phone, text: '+65 8776 7089' },
+                { icon: Mail, text: 'Vineet@flare-consult.com' },
+                { icon: Globe, text: 'Singapore · India · Malaysia' },
               ].map((item) => {
                 const Icon = item.icon;
                 return (

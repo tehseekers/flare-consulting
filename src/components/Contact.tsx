@@ -71,10 +71,10 @@ export default function Contact() {
     <section id="contact" className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-16">
-          <p className="text-teal-700 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
+          <p className="text-blue-600 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
             Get In Touch
           </p>
-          <div className="w-12 h-[3px] rounded-full mx-auto mb-7" style={{ background: '#0F766E' }} />
+          <div className="w-12 h-[3px] rounded-full mx-auto mb-7" style={{ background: '#1E82C8' }} />
           <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-5 tracking-tight">
             Start Your Project
           </h2>
@@ -95,9 +95,9 @@ export default function Contact() {
 
               {[
                 { icon: MapPin, label: 'Registered Address', value: '2 Venture Drive #11-05\nVision Exchange\nSingapore 608526' },
-                { icon: Phone, label: 'Phone', value: '+65 9116 5003' },
-                { icon: Mail, label: 'Email', value: 'hello@flareconsulting.sg' },
-                { icon: Globe, label: 'Offices', value: 'Singapore (HQ) · India' },
+                { icon: Phone, label: 'Phone', value: '+65 8776 7089' },
+                { icon: Mail, label: 'Email', value: 'Vineet@flare-consult.com' },
+                { icon: Globe, label: 'Offices', value: 'Singapore (HQ) · India · Malaysia' },
               ].map((item) => {
                 const Icon = item.icon;
                 return (
@@ -114,12 +114,12 @@ export default function Contact() {
               })}
             </div>
 
-            <div className="rounded-2xl p-6" style={{ background: '#0F766E' }}>
+            <div className="rounded-2xl p-6" style={{ background: '#1E82C8' }}>
               <p className="text-white font-bold text-sm mb-2">Response Commitment</p>
               <p className="text-blue-100 text-xs leading-relaxed">
                 We respond to all project enquiries within one business day. For urgent matters,
                 call us directly at{' '}
-                <span className="text-white font-semibold">+65 9116 5003</span>.
+                <span className="text-white font-semibold">+65 8776 7089</span>.
               </p>
             </div>
           </div>

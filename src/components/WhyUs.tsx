@@ -8,12 +8,12 @@ export default function WhyUs() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-16">
-          <p className="text-teal-400 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
+          <p className="text-blue-400 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
             Why Flare
           </p>
           <div
             className="w-12 h-[3px] rounded-full mx-auto mb-7"
-            style={{ background: 'linear-gradient(90deg, #0F766E, #14b8a6)' }}
+            style={{ background: 'linear-gradient(90deg, #1E82C8, #38BDF8)' }}
           />
           <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-5 tracking-tight">
             Why Flare Consultancy

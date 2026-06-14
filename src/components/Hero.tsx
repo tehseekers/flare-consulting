@@ -71,7 +71,7 @@ export default function Hero() {
       <div
         className="absolute bottom-0 left-0 w-[600px] h-[600px] pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at 30% 70%, rgba(15,118,110,0.08) 0%, transparent 60%)',
+          background: 'radial-gradient(circle at 30% 70%, rgba(30,130,200,0.08) 0%, transparent 60%)',
         }}
       />
 
@@ -85,7 +85,10 @@ export default function Hero() {
                 <span>🇸🇬</span> Singapore HQ
               </span>
               <span className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-medium px-4 py-1.5 rounded-full">
-                <span>🇮🇳</span> India Operations
+                <span>🇮🇳</span> India
+              </span>
+              <span className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-medium px-4 py-1.5 rounded-full">
+                <span>🇲🇾</span> Malaysia
               </span>
             </div>
 
@@ -107,7 +110,7 @@ export default function Hero() {
               <span className="text-white font-medium">Permanent Placement</span> and{' '}
               <span className="text-white font-medium">Contract Staffing</span> — we combine
               deep market insight with a precision talent network to build high-performing
-              teams across Singapore and India.
+              teams across Singapore, India, and Malaysia.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-20">
@@ -120,9 +123,9 @@ export default function Hero() {
               <button
                 onClick={() => handleScroll('#contact')}
                 className="font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-sm"
-                style={{ border: '1px solid rgba(15,118,110,0.5)', color: '#5eead4', background: 'rgba(15,118,110,0.08)' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(15,118,110,0.18)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(15,118,110,0.8)'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(15,118,110,0.08)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(15,118,110,0.5)'; }}
+                style={{ border: '1px solid rgba(30,130,200,0.5)', color: '#7DD3FC', background: 'rgba(30,130,200,0.08)' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(30,130,200,0.18)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(30,130,200,0.8)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = 'rgba(30,130,200,0.08)'; (e.currentTarget as HTMLButtonElement).style.borderColor = 'rgba(30,130,200,0.5)'; }}
               >
                 Find Talent
               </button>

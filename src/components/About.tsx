@@ -7,18 +7,18 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-20 items-start">
           {/* Left: text */}
           <div>
-            <p className="text-teal-700 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
+            <p className="text-blue-600 text-xs font-semibold uppercase tracking-[0.3em] mb-5">
               About Us
             </p>
-            <div className="w-12 h-[3px] mb-7 rounded-full" style={{ background: '#0F766E' }} />
+            <div className="w-12 h-[3px] mb-7 rounded-full" style={{ background: '#1E82C8' }} />
             <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-7 tracking-tight">
               A Trusted Staffing Partner Built for Asia
             </h2>
             <p className="text-slate-500 leading-relaxed mb-5 text-base">
               Flare Consultancy Pte Ltd is a Singapore-headquartered staffing solutions firm
-              established in January 2024, with a strong delivery presence in India. We are a
-              pure-play staffing company focused on connecting businesses with high-quality talent
-              across key industries and technology domains.
+              established in January 2024. Our core consulting team is based in Singapore, with a
+              strategic talent sourcing reach across Singapore, India, and Malaysia — enabling us to
+              connect businesses with high-quality talent across Asia Pacific.
             </p>
             <p className="text-slate-500 leading-relaxed mb-10 text-base">
               At Flare, we believe that the right talent is the foundation of business success.
@@ -40,9 +40,9 @@ export default function About() {
               </div>
               <div
                 className="rounded-xl p-6 border-l-4"
-                style={{ background: 'rgba(15,118,110,0.04)', borderLeftColor: '#0F766E' }}
+                style={{ background: 'rgba(15,118,110,0.04)', borderLeftColor: '#1E82C8' }}
               >
-                <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#0F766E' }}>Our Mission</p>
+                <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#1E82C8' }}>Our Mission</p>
                 <p className="text-slate-700 text-sm leading-relaxed">
                   To deliver high-quality, responsive, and scalable recruitment solutions by combining
                   deep market insight, a strong regional talent network, and a client-centric approach —
@@ -80,8 +80,8 @@ export default function About() {
           <div className="grid grid-cols-2 gap-5">
             {[
               { label: 'Headquartered', value: 'Singapore', sub: '2 Venture Drive, Vision Exchange', color: '#3b82f6' },
-              { label: 'Delivery Centre', value: 'India', sub: 'Pan-India remote & on-site teams', color: '#0F766E' },
-              { label: 'Founded', value: '2024', sub: 'Registered UEN 202401794Z', color: '#0F766E' },
+              { label: 'Asia Pacific Reach', value: 'SG · IN · MY', sub: 'Singapore, India & Malaysia', color: '#1E82C8' },
+              { label: 'Founded', value: '2024', sub: 'Registered UEN 202401794Z', color: '#1E82C8' },
               { label: 'EA License', value: '24C2464', sub: 'Ministry of Manpower, Singapore', color: '#f59e0b' },
             ].map((card) => (
               <div
