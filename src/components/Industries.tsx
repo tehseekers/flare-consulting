@@ -9,7 +9,7 @@ export default function Industries() {
             Specialisation
           </p>
           <div className="w-12 h-[3px] rounded-full mx-auto mb-7 gold-divider" />
-          <h2 className="text-4xl sm:text-5xl font-extrabold mb-5 tracking-tight" style={{ color: '#040D1C' }}>
+          <h2 className="text-4xl sm:text-5xl font-extrabold mb-5 tracking-tight" style={{ color: '#0A3F6B' }}>
             Industries We Serve
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed">
@@ -34,7 +34,7 @@ export default function Industries() {
                 >
                   <Icon className="w-5 h-5" style={{ color: industry.color }} />
                 </div>
-                <h3 className="font-extrabold mb-3 text-base tracking-tight" style={{ color: '#040D1C' }}>
+                <h3 className="font-extrabold mb-3 text-base tracking-tight" style={{ color: '#0A3F6B' }}>
                   {industry.label}
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{industry.description}</p>

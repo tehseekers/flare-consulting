@@ -64,7 +64,7 @@ export default function Contact() {
             Get In Touch
           </p>
           <div className="w-12 h-[3px] rounded-full mx-auto mb-7 gold-divider" />
-          <h2 className="text-4xl sm:text-5xl font-extrabold mb-5 tracking-tight" style={{ color: '#040D1C' }}>
+          <h2 className="text-4xl sm:text-5xl font-extrabold mb-5 tracking-tight" style={{ color: '#0A3F6B' }}>
             Let's Find Your Next Hire
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto leading-relaxed">
@@ -76,7 +76,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-5 gap-12 items-start">
           {/* Left: contact info */}
           <div className="lg:col-span-2 space-y-5">
-            <div className="rounded-2xl p-8 space-y-6" style={{ background: '#040D1C' }}>
+            <div className="rounded-2xl p-8 space-y-6" style={{ background: '#0A3F6B' }}>
               <div>
                 <h3 className="text-lg font-extrabold text-white mb-1 tracking-tight">Contact Information</h3>
                 <div className="w-10 h-[2px] mt-3 rounded-full gold-divider" />
@@ -108,7 +108,7 @@ export default function Contact() {
 
             <div
               className="rounded-2xl p-6"
-              style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C867)', color: '#040D1C' }}
+              style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C867)', color: '#0A3F6B' }}
             >
               <p className="font-extrabold text-sm mb-2">Response Commitment</p>
               <p className="text-sm leading-relaxed opacity-80">
@@ -126,7 +126,7 @@ export default function Contact() {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style={{ background: 'rgba(201,168,76,0.15)' }}>
                   <CheckCircle className="w-8 h-8" style={{ color: '#C9A84C' }} />
                 </div>
-                <h3 className="text-2xl font-extrabold mb-3 tracking-tight" style={{ color: '#040D1C' }}>Enquiry Received</h3>
+                <h3 className="text-2xl font-extrabold mb-3 tracking-tight" style={{ color: '#0A3F6B' }}>Enquiry Received</h3>
                 <p className="text-slate-500 text-sm leading-relaxed max-w-sm mx-auto mb-8">
                   Thank you for reaching out. One of our consultants will be in touch within one
                   business day.
@@ -134,7 +134,7 @@ export default function Contact() {
                 <button
                   onClick={() => setSubmitted(false)}
                   className="text-sm font-bold px-7 py-3 rounded-xl transition-all hover:scale-[1.02]"
-                  style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C867)', color: '#040D1C' }}
+                  style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C867)', color: '#0A3F6B' }}
                 >
                   Submit Another Enquiry
                 </button>
@@ -143,7 +143,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="bg-slate-50 border border-slate-100 rounded-2xl p-8 space-y-5" noValidate>
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#040D1C' }}>
+                    <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#0A3F6B' }}>
                       Full Name <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -160,7 +160,7 @@ export default function Contact() {
                     )}
                   </div>
                   <div>
-                    <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#040D1C' }}>
+                    <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#0A3F6B' }}>
                       Email Address <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -180,17 +180,17 @@ export default function Contact() {
 
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#040D1C' }}>Company Name</label>
+                    <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#0A3F6B' }}>Company Name</label>
                     <input type="text" placeholder="Acme Corporation" value={form.company} onChange={(e) => field('company', e.target.value)} className={inputBase} />
                   </div>
                   <div>
-                    <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#040D1C' }}>Phone Number</label>
+                    <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#0A3F6B' }}>Phone Number</label>
                     <input type="tel" placeholder="+65 XXXX XXXX" value={form.phone} onChange={(e) => field('phone', e.target.value)} className={inputBase} />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#040D1C' }}>Service of Interest</label>
+                  <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#0A3F6B' }}>Service of Interest</label>
                   <select value={form.service} onChange={(e) => field('service', e.target.value)} className={`${inputBase} cursor-pointer`}>
                     <option value="">Select a service…</option>
                     {SERVICE_OPTIONS.map((s) => <option key={s} value={s}>{s}</option>)}
@@ -198,7 +198,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#040D1C' }}>
+                  <label className="block text-xs font-bold mb-2 uppercase tracking-wide" style={{ color: '#0A3F6B' }}>
                     Your Requirements <span className="text-red-500">*</span>
                   </label>
                   <textarea
@@ -220,7 +220,7 @@ export default function Contact() {
                   className="w-full font-extrabold py-4 rounded-xl transition-all duration-200 hover:scale-[1.01] text-sm tracking-widest uppercase"
                   style={{
                     background: 'linear-gradient(135deg, #C9A84C, #E8C867)',
-                    color: '#040D1C',
+                    color: '#0A3F6B',
                     boxShadow: '0 6px 28px rgba(201,168,76,0.35)',
                   }}
                 >

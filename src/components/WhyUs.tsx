@@ -4,7 +4,7 @@ export default function WhyUs() {
   return (
     <section
       className="py-28"
-      style={{ background: 'linear-gradient(145deg, #040D1C 0%, #071428 100%)' }}
+      style={{ background: 'linear-gradient(145deg, #0A3F6B 0%, #1568A8 100%)' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-16">
@@ -32,8 +32,8 @@ export default function WhyUs() {
                 className="p-8 rounded-2xl hover:-translate-y-2 transition-all duration-300 group cursor-default border"
                 style={{
                   background: 'rgba(255,255,255,0.03)',
-                  borderColor: 'rgba(201,168,76,0.12)',
-                  borderTop: '2px solid rgba(201,168,76,0.4)',
+                  borderColor: 'rgba(255,255,255,0.12)',
+                  borderTop: '2px solid rgba(201,168,76,0.6)',
                 }}
               >
                 <div

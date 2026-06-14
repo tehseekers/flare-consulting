@@ -11,7 +11,7 @@ export default function About() {
               About Us
             </p>
             <div className="w-12 h-[3px] mb-7 rounded-full gold-divider" />
-            <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-7 tracking-tight" style={{ color: '#040D1C' }}>
+            <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-7 tracking-tight" style={{ color: '#0A3F6B' }}>
               A Trusted Staffing Partner Built for Asia
             </h2>
             <p className="text-slate-500 leading-relaxed mb-5 text-base">
@@ -92,7 +92,7 @@ export default function About() {
                 <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mb-2">
                   {card.label}
                 </p>
-                <p className="text-2xl font-extrabold mb-1.5 tracking-tight" style={{ color: '#040D1C' }}>{card.value}</p>
+                <p className="text-2xl font-extrabold mb-1.5 tracking-tight" style={{ color: '#0A3F6B' }}>{card.value}</p>
                 <p className="text-xs text-slate-500 leading-relaxed">{card.sub}</p>
               </div>
             ))}

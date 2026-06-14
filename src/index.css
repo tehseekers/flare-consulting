@@ -31,9 +31,9 @@
     background-clip: text;
   }
   .glass-card {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.10);
     backdrop-filter: blur(16px);
-    border: 1px solid rgba(201, 168, 76, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
   .glow-gold {
     box-shadow: 0 0 40px rgba(201, 168, 76, 0.12), 0 0 80px rgba(201, 168, 76, 0.04);

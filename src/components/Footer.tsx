@@ -8,7 +8,7 @@ export default function Footer() {
   };
 
   return (
-    <footer style={{ background: '#040D1C', borderTop: '1px solid rgba(201,168,76,0.15)' }}>
+    <footer style={{ background: '#0A3F6B', borderTop: '1px solid rgba(201,168,76,0.15)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}

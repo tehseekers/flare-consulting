@@ -43,7 +43,7 @@ export default function Hero() {
     <section
       id="home"
       className="relative min-h-screen flex flex-col justify-center overflow-hidden"
-      style={{ background: 'linear-gradient(145deg, #040D1C 0%, #071428 55%, #0A1A3A 100%)' }}
+      style={{ background: 'linear-gradient(145deg, #0D4F82 0%, #1568A8 55%, #1E82C8 100%)' }}
     >
       {/* Subtle grid overlay */}
       <div
@@ -59,7 +59,7 @@ export default function Hero() {
       <div
         className="absolute top-0 right-0 w-[900px] h-[900px] pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at 70% 20%, rgba(201,168,76,0.07) 0%, transparent 55%)',
+          background: 'radial-gradient(circle at 70% 20%, rgba(255,255,255,0.10) 0%, transparent 55%)',
         }}
       />
       {/* Blue glow bottom-left */}
@@ -123,7 +123,7 @@ export default function Hero() {
                 className="text-sm font-bold px-8 py-4 rounded-xl transition-all duration-200 hover:scale-[1.03]"
                 style={{
                   background: 'linear-gradient(135deg, #C9A84C, #E8C867)',
-                  color: '#040D1C',
+                  color: '#0A3F6B',
                   boxShadow: '0 6px 28px rgba(201,168,76,0.35)',
                 }}
               >

@@ -73,7 +73,7 @@ export default function Navbar() {
               className="text-sm font-bold px-5 py-2.5 rounded-lg transition-all duration-200 hover:scale-[1.03] shadow-lg"
               style={{
                 background: 'linear-gradient(135deg, #C9A84C, #E8C867)',
-                color: '#040D1C',
+                color: '#0A3F6B',
                 boxShadow: '0 4px 20px rgba(201,168,76,0.35)',
               }}
             >
@@ -106,7 +106,7 @@ export default function Navbar() {
           <button
             onClick={() => handleNav('#contact')}
             className="mt-4 w-full text-sm font-bold py-3 rounded-lg transition-colors"
-            style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C867)', color: '#040D1C' }}
+            style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C867)', color: '#0A3F6B' }}
           >
             Find Talent
           </button>
