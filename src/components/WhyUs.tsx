@@ -8,7 +8,7 @@ export default function WhyUs() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-16">
-          <p className="text-xs font-bold uppercase tracking-[0.35em] mb-4" style={{ color: '#C9A84C' }}>
+          <p className="text-xs font-bold uppercase tracking-[0.35em] mb-4" style={{ color: '#F5D87A' }}>
             Why Flare
           </p>
           <div
@@ -17,7 +17,7 @@ export default function WhyUs() {
           <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-5 tracking-tight">
             Why Flare Consulting
           </h2>
-          <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(255,255,255,0.68)' }}>
             We do not just place candidates — we build partnerships. Here is why organisations
             across Asia trust Flare Consulting as their preferred staffing partner.
           </p>
@@ -47,7 +47,7 @@ export default function WhyUs() {
                 </div>
                 <h3 className="text-base font-extrabold text-white mb-3 tracking-tight">{item.title}</h3>
                 <div className="w-8 h-[2px] rounded-full mb-4 transition-all duration-300 group-hover:w-14 gold-divider" />
-                <p className="text-slate-400 text-sm leading-relaxed">{item.description}</p>
+                <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.65)' }}>{item.description}</p>
               </div>
             );
           })}

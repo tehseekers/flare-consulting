@@ -26,7 +26,7 @@ function StatItem({ stat }: { stat: (typeof HERO_STATS)[0] }) {
       <div className="text-4xl font-extrabold mb-1 tabular-nums" style={{ color: '#C9A84C' }}>
         {val}{stat.suffix}
       </div>
-      <div className="text-xs text-slate-400 tracking-widest uppercase font-medium">{stat.label}</div>
+      <div className="text-xs tracking-widest uppercase font-medium" style={{ color: 'rgba(255,255,255,0.60)' }}>{stat.label}</div>
     </div>
   );
 }
@@ -95,7 +95,7 @@ export default function Hero() {
               ))}
             </div>
 
-            <p className="text-xs font-bold uppercase tracking-[0.35em] mb-5" style={{ color: '#C9A84C' }}>
+            <p className="text-xs font-bold uppercase tracking-[0.35em] mb-5" style={{ color: '#F5D87A' }}>
               Staffing Solutions · Asia-Pacific
             </p>
 
@@ -183,7 +183,7 @@ export default function Hero() {
                     </span>
                   </div>
                   <p className="text-white text-sm font-bold mb-1">{card.title}</p>
-                  <p className="text-slate-400 text-xs leading-relaxed">{card.detail}</p>
+                  <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.65)' }}>{card.detail}</p>
                 </div>
               );
             })}

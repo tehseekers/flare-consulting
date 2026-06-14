@@ -98,7 +98,7 @@ export default function Contact() {
                       <Icon className="w-4 h-4" style={{ color: '#C9A84C' }} />
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500 font-semibold mb-0.5 uppercase tracking-wide">{item.label}</p>
+                      <p className="text-xs font-semibold mb-0.5 uppercase tracking-wide" style={{ color: 'rgba(255,255,255,0.48)' }}>{item.label}</p>
                       <p className="text-sm text-slate-200 whitespace-pre-line leading-relaxed">{item.value}</p>
                     </div>
                   </div>

@@ -29,13 +29,13 @@ export default function Footer() {
                 <div className="text-[9px] tracking-[0.2em] uppercase font-semibold mt-0.5" style={{ color: 'rgba(201,168,76,0.5)' }}>Staffing Solutions</div>
               </div>
             </div>
-            <p className="text-slate-500 text-sm leading-relaxed mb-5">
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'rgba(255,255,255,0.58)' }}>
               Connecting Asia's best talent with the right organisations — pure-play staffing
               solutions across Singapore, India and Malaysia.
             </p>
-            <p className="text-xs text-slate-700 space-y-1">
-              <span className="block">UEN <span className="font-mono text-slate-500">202401794Z</span></span>
-              <span className="block">EA License <span className="font-mono text-slate-500">24C2464</span></span>
+            <p className="text-xs space-y-1" style={{ color: 'rgba(255,255,255,0.40)' }}>
+              <span className="block">UEN <span className="font-mono" style={{ color: 'rgba(255,255,255,0.55)' }}>202401794Z</span></span>
+              <span className="block">EA License <span className="font-mono" style={{ color: 'rgba(255,255,255,0.55)' }}>24C2464</span></span>
             </p>
           </div>
 
@@ -47,7 +47,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
-                  <button onClick={() => handleNav(link.href)} className="text-slate-500 hover:text-slate-200 text-sm transition-colors duration-200">
+                  <button onClick={() => handleNav(link.href)} className="text-sm transition-colors duration-200 hover:text-white" style={{ color: 'rgba(255,255,255,0.58)' }}>
                     {link.label}
                   </button>
                 </li>
@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {SERVICES.map((s) => (
                 <li key={s.title}>
-                  <button onClick={() => handleNav('#services')} className="text-slate-500 hover:text-slate-200 text-sm transition-colors duration-200 text-left">
+                  <button onClick={() => handleNav('#services')} className="text-sm transition-colors duration-200 hover:text-white text-left" style={{ color: 'rgba(255,255,255,0.58)' }}>
                     {s.title}
                   </button>
                 </li>
@@ -87,7 +87,7 @@ export default function Footer() {
                 return (
                   <li key={item.text} className="flex items-start gap-3">
                     <Icon className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#C9A84C' }} />
-                    <span className="text-slate-500 text-sm whitespace-pre-line leading-relaxed">{item.text}</span>
+                    <span className="text-sm whitespace-pre-line leading-relaxed" style={{ color: 'rgba(255,255,255,0.60)' }}>{item.text}</span>
                   </li>
                 );
               })}
@@ -97,10 +97,10 @@ export default function Footer() {
 
         <div className="border-t pt-8 space-y-2" style={{ borderColor: 'rgba(201,168,76,0.12)' }}>
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <p className="text-slate-600 text-xs">© 2024 Flare Consulting Pte. Ltd. All rights reserved.</p>
-            <p className="text-slate-700 text-xs font-mono">EA License No. 24C2464 · UEN 202401794Z</p>
+            <p className="text-xs" style={{ color: 'rgba(255,255,255,0.40)' }}>© 2024 Flare Consulting Pte. Ltd. All rights reserved.</p>
+            <p className="text-xs font-mono" style={{ color: 'rgba(255,255,255,0.35)' }}>EA License No. 24C2464 · UEN 202401794Z</p>
           </div>
-          <p className="text-slate-700 text-xs leading-relaxed">
+          <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.35)' }}>
             Flare Consulting Pte. Ltd. is incorporated and registered in Singapore. Registered address: 2 Venture Drive #11-05 Vision Exchange, Singapore 608526.
           </p>
         </div>
