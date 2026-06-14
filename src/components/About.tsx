@@ -15,7 +15,7 @@ export default function About() {
               A Trusted Staffing Partner Built for Asia
             </h2>
             <p className="text-slate-500 leading-relaxed mb-5 text-base">
-              Flare Consultancy Pte Ltd is a Singapore-headquartered staffing solutions firm
+              Flare Consulting Pte Ltd is a Singapore-headquartered staffing solutions firm
               established in January 2024. Our core consulting team is based in Singapore, with a
               strategic talent sourcing reach across Singapore, India, and Malaysia — enabling us to
               connect businesses with high-quality talent across Asia Pacific.

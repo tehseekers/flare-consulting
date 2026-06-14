@@ -16,11 +16,11 @@ export default function WhyUs() {
             style={{ background: 'linear-gradient(90deg, #1E82C8, #38BDF8)' }}
           />
           <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-5 tracking-tight">
-            Why Flare Consultancy
+            Why Flare Consulting
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed">
             We do not just place candidates — we build partnerships. Here is why organisations
-            across Asia trust Flare Consultancy as their preferred staffing partner.
+            across Asia trust Flare Consulting as their preferred staffing partner.
           </p>
         </div>
 

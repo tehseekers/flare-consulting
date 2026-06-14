@@ -17,14 +17,14 @@ export default function Footer() {
               <div className="rounded-xl overflow-hidden bg-white p-1 flex-shrink-0">
                 <img
                   src={`${import.meta.env.BASE_URL}image.png`}
-                  alt="Flare Consultancy"
+                  alt="Flare Consulting"
                   className="h-10 w-auto object-contain block"
                   style={{ maxWidth: '58px' }}
                 />
               </div>
               <div>
                 <span className="text-white font-bold text-base tracking-tight">
-                  Flare <span className="text-blue-400">Consultancy</span>
+                  Flare <span className="text-blue-400">Consulting</span>
                 </span>
                 <div className="text-[9px] tracking-[0.2em] uppercase text-slate-600 font-semibold mt-0.5">Staffing Solutions</div>
               </div>
@@ -97,11 +97,11 @@ export default function Footer() {
 
         <div className="border-t border-slate-800/60 pt-8 space-y-2">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <p className="text-slate-600 text-xs">© 2024 Flare Consultancy Pte. Ltd. All rights reserved.</p>
+            <p className="text-slate-600 text-xs">© 2024 Flare Consulting Pte. Ltd. All rights reserved.</p>
             <p className="text-slate-700 text-xs font-mono">EA License No. 24C2464 · UEN 202401794Z</p>
           </div>
           <p className="text-slate-700 text-xs leading-relaxed">
-            Flare Consultancy Pte. Ltd. is incorporated and registered in Singapore. Registered address: 2 Venture Drive #11-05 Vision Exchange, Singapore 608526.
+            Flare Consulting Pte. Ltd. is incorporated and registered in Singapore. Registered address: 2 Venture Drive #11-05 Vision Exchange, Singapore 608526.
           </p>
         </div>
       </div>

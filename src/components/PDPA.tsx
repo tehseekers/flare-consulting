@@ -31,7 +31,7 @@ export default function PDPA() {
 
           <div className="space-y-5 text-slate-600 text-sm leading-relaxed">
             <p>
-              Flare Consultancy Pte Ltd is committed to safeguarding personal data in accordance
+              Flare Consulting Pte Ltd is committed to safeguarding personal data in accordance
               with the <span className="font-semibold text-slate-800">Personal Data Protection Act 2012 (PDPA)</span> of
               Singapore. The PDPA establishes a comprehensive framework governing the collection, use,
               disclosure, and protection of personal data by organisations.

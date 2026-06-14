@@ -33,7 +33,7 @@ export default function Navbar() {
             <div className="rounded-xl overflow-hidden bg-white p-1 shadow-md flex-shrink-0">
               <img
                 src={`${import.meta.env.BASE_URL}image.png`}
-                alt="Flare Consultancy"
+                alt="Flare Consulting"
                 className="h-9 w-auto object-contain block"
                 style={{ maxWidth: '52px' }}
               />
@@ -41,7 +41,7 @@ export default function Navbar() {
             <div>
               <span className={`font-bold text-[15px] tracking-tight transition-colors duration-300 ${scrolled ? 'text-slate-900' : 'text-white'}`}>
                 Flare{' '}
-                <span className={scrolled ? 'text-blue-600' : 'text-blue-400'}>Consultancy</span>
+                <span className={scrolled ? 'text-blue-600' : 'text-blue-400'}>Consulting</span>
               </span>
               <div className={`text-[9px] tracking-[0.22em] uppercase font-semibold transition-colors duration-300 ${scrolled ? 'text-slate-400' : 'text-blue-300/70'}`}>
                 Staffing Solutions
