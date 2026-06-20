@@ -43,7 +43,7 @@ export default function Services() {
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">{service.description}</p>
 
                 <div className="inline-flex items-center gap-1.5 text-xs font-bold transition-all duration-200 group-hover:gap-3" style={{ color: '#C9A84C' }}>
-                  Learn More <ArrowRight className="w-3.5 h-3.5" />
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </div>
             );

@@ -79,7 +79,6 @@ export default function Hero() {
               {[
                 { flag: '🇸🇬', label: 'Singapore HQ' },
                 { flag: '🇮🇳', label: 'India' },
-                { flag: '🇲🇾', label: 'Malaysia' },
               ].map((b) => (
                 <span
                   key={b.label}
@@ -114,7 +113,7 @@ export default function Hero() {
               <span className="text-white font-semibold">Permanent Placement</span> and{' '}
               <span className="text-white font-semibold">Contract Staffing</span> — we combine
               deep market insight with a precision talent network to build high-performing
-              teams across Singapore, India, and Malaysia.
+              teams across Singapore and India.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-20">
