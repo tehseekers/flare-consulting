@@ -113,7 +113,7 @@ export default function Hero() {
               <span className="text-white font-semibold">Permanent Placement</span> and{' '}
               <span className="text-white font-semibold">Contract Staffing</span> — we combine
               deep market insight with a precision talent network to build high-performing
-              teams across Singapore and India.
+              teams across Singapore, Malaysia and India.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-20">
