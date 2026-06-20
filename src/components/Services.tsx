@@ -1,4 +1,3 @@
-import { ArrowRight } from 'lucide-react';
 import { SERVICES } from '../data/content';
 
 export default function Services() {
@@ -41,10 +40,6 @@ export default function Services() {
                 <h3 className="text-lg font-extrabold mb-3 tracking-tight" style={{ color: '#0A3F6B' }}>{service.title}</h3>
                 <div className="w-8 h-[2px] rounded-full mb-4 transition-all duration-300 group-hover:w-14 gold-divider" />
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">{service.description}</p>
-
-                <div className="inline-flex items-center gap-1.5 text-xs font-bold transition-all duration-200 group-hover:gap-3" style={{ color: '#C9A84C' }}>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </div>
               </div>
             );
           })}
