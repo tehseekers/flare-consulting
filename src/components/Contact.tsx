@@ -26,6 +26,10 @@ export default function Contact() {
   const [form, setForm] = useState<FormState>(EMPTY);
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xdarzpyq';
 
   const validate = (): Errors => {
     const e: Errors = {};
@@ -39,13 +43,49 @@ export default function Contact() {
     return e;
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const errs = validate();
-    if (Object.keys(errs).length) { setErrors(errs); return; }
+    if (Object.keys(errs).length) {
+      setErrors(errs);
+      return;
+    }
+
     setErrors({});
-    setSubmitted(true);
-    setForm(EMPTY);
+    setSubmitError(null);
+    setLoading(true);
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          company: form.company,
+          phone: form.phone,
+          service: form.service,
+          message: form.description,
+        }),
+      });
+
+      if (!response.ok) {
+        const body = await response.json().catch(() => null);
+        throw new Error(body?.error || 'Failed to submit the enquiry.');
+      }
+
+      setSubmitted(true);
+      setForm(EMPTY);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error ? error.message : 'Unable to submit enquiry. Please try again.'
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   const field = (id: keyof FormState, value: string) => {
@@ -215,16 +255,23 @@ export default function Contact() {
                   )}
                 </div>
 
+                {submitError && (
+                  <div className="rounded-2xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+                    {submitError}
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full font-extrabold py-4 rounded-xl transition-all duration-200 hover:scale-[1.01] text-sm tracking-widest uppercase"
+                  disabled={loading}
+                  className="w-full font-extrabold py-4 rounded-xl transition-all duration-200 hover:scale-[1.01] text-sm tracking-widest uppercase disabled:cursor-not-allowed disabled:opacity-60"
                   style={{
                     background: 'linear-gradient(135deg, #C9A84C, #E8C867)',
                     color: '#0A3F6B',
                     boxShadow: '0 6px 28px rgba(201,168,76,0.35)',
                   }}
                 >
-                  Submit Enquiry
+                  {loading ? 'Sending…' : 'Submit Enquiry'}
                 </button>
               </form>
             )}
