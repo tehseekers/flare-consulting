@@ -126,7 +126,7 @@ export default function Contact() {
                 { icon: MapPin, label: 'Registered Address', value: '2 Venture Drive #11-05\nVision Exchange\nSingapore 608526' },
                 { icon: Phone, label: 'Phone', value: '+65 8776 7089' },
                 { icon: Mail, label: 'Email', value: 'Vineet@flare-consult.com' },
-                { icon: Globe, label: 'Offices', value: 'Singapore (HQ) · India · Malaysia' },
+                { icon: Globe, label: 'Offices', value: 'Singapore (HQ) · India' },
               ].map((item) => {
                 const Icon = item.icon;
                 return (

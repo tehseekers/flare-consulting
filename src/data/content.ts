@@ -180,7 +180,7 @@ export const WHY_US = [
     icon: Globe,
     title: 'Singapore-Based, Asia Pacific Reach',
     description:
-      'Headquartered in Singapore with our core consulting team on the ground — and a strategic talent sourcing reach spanning Singapore, India, and Malaysia.',
+      'Headquartered in Singapore with our core consulting team on the ground — and a strategic talent sourcing reach spanning Singapore and India.',
     color: '#3b82f6',
   },
   {
@@ -208,7 +208,7 @@ export const WHY_US = [
 
 export const ABOUT_BULLETS = [
   { icon: Rocket, text: 'Pure-play staffing firm with precision talent matching across Asia-Pacific', color: '#3b82f6' },
-  { icon: Globe, text: 'Strategic reach across Singapore, India and Malaysia — enabling pan-APAC talent sourcing', color: '#1E82C8' },
+  { icon: Globe, text: 'Strategic reach across Singapore and India — enabling pan-APAC talent sourcing', color: '#1E82C8' },
   { icon: Users, text: 'Consultants with deep market insight and extensive regional talent networks', color: '#1E82C8' },
   { icon: Award, text: 'Client-centric and outcome-driven — focused entirely on your business success', color: '#38BDF8' },
 ];

@@ -17,7 +17,7 @@ export default function About() {
             <p className="text-slate-500 leading-relaxed mb-5 text-base">
               Flare Consulting Pte. Ltd. is a Singapore-headquartered staffing solutions firm
               established in January 2024. Our core consulting team is based in Singapore, with a
-              strategic talent sourcing reach across Singapore, India, and Malaysia — enabling us to
+              strategic talent sourcing reach across Singapore and India — enabling us to
               connect businesses with high-quality talent across Asia Pacific.
             </p>
             <p className="text-slate-500 leading-relaxed mb-10 text-base">
@@ -80,7 +80,7 @@ export default function About() {
           <div className="grid grid-cols-2 gap-5">
             {[
               { label: 'Headquartered', value: 'Singapore', sub: '2 Venture Drive, Vision Exchange', color: '#C9A84C' },
-              { label: 'Asia Pacific Reach', value: 'SG · IN · MY', sub: 'Singapore, India & Malaysia', color: '#1E82C8' },
+              { label: 'Asia Pacific Reach', value: 'SG · IN', sub: 'Singapore and India', color: '#1E82C8' },
               { label: 'Founded', value: '2024', sub: 'Registered UEN 202401794Z', color: '#1E82C8' },
               { label: 'EA License', value: '24C2464', sub: 'Ministry of Manpower, Singapore', color: '#C9A84C' },
             ].map((card) => (

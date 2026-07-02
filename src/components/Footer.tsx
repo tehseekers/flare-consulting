@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'rgba(255,255,255,0.58)' }}>
               Connecting Asia's best talent with the right organisations — pure-play staffing
-              solutions across Singapore, India and Malaysia.
+              solutions across Singapore and India.
             </p>
             <p className="text-xs space-y-1" style={{ color: 'rgba(255,255,255,0.40)' }}>
               <span className="block">UEN <span className="font-mono" style={{ color: 'rgba(255,255,255,0.55)' }}>202401794Z</span></span>
@@ -81,7 +81,7 @@ export default function Footer() {
                 { icon: MapPin, text: '2 Venture Drive #11-05\nVision Exchange, Singapore 608526' },
                 { icon: Phone, text: '+65 8776 7089' },
                 { icon: Mail, text: 'Vineet@flare-consult.com' },
-                { icon: Globe, text: 'Singapore · India · Malaysia' },
+                { icon: Globe, text: 'Singapore · India' },
               ].map((item) => {
                 const Icon = item.icon;
                 return (
