@@ -29,7 +29,7 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xdarzpyq';
+  const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT?.trim() || 'https://formspree.io/f/xdarzpyq';
 
   const validate = (): Errors => {
     const e: Errors = {};
